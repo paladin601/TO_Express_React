@@ -12,6 +12,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Routes
+app.use('/api/crud', require('./server/router/router'));
 //Folders static
 
 app.listen(app.get('port'), () => {
