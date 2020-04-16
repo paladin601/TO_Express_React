@@ -1,0 +1,22 @@
+{
+  "name": "to_express_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paladin601/TO_Express_React.git"
+  },
+  "keywords": [
+    "Terapy"
+  ],
+  "author": "Jose Rivas, Leonardo Pinzon and Yesenia Vasquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paladin601/TO_Express_React/issues"
+  },
+  "homepage": "https://github.com/paladin601/TO_Express_React#readme"
+}
