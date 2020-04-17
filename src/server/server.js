@@ -13,11 +13,13 @@ app.set('port', process.env.PORT || 5001);
 app.use(morgan('dev'));
 app.use(express.json());
 
-//Routes
-app.use('/api/crud', require('./router/router'));
 //Folders static
 let appStaticAssetsPath = path.join(__dirname, '../client')
-app.use(express.static(appStaticAssetsPath));
+//Routes
+//Routes Client
+require('../router/router-client')(express, app, appStaticAssetsPath);
+//Routes Api
+app.use('/api/crud', require('../router/router-server'));
 
 app.listen(app.get('port'), () => {
     console.log("server run port " + app.get('port'));
