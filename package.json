@@ -28,8 +28,10 @@
   },
   "homepage": "https://github.com/paladin601/TO_Express_React#readme",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jquery": "^3.5.0",
     "mongoose": "^5.9.9",
     "morgan": "^1.10.0"
   },
