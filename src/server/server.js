@@ -16,6 +16,8 @@ app.use(express.json());
 //Routes
 app.use('/api/crud', require('./router/router'));
 //Folders static
+let appStaticAssetsPath = path.join(__dirname, '../client')
+app.use(express.static(appStaticAssetsPath));
 
 app.listen(app.get('port'), () => {
     console.log("server run port " + app.get('port'));
