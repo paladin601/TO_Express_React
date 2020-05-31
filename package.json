@@ -8,6 +8,7 @@
     "copy-cmd": "copy .env.example .env",
     "yarn-install": "npm i yarn -g",
     "start": "yarn && yarn webpack-build && yarn server-dev",
+    "start-npm": "npm i && npm run webpack-build && npm run server-dev",
     "server": "node src/server/server.js",
     "server-dev": "nodemon src/server/server.js",
     "webpack-build": "webpack --config src/webpack/webpack.config.js --display-error-details --mode=development --progress",
@@ -33,7 +34,8 @@
     "express": "^4.17.1",
     "jquery": "^3.5.0",
     "mongoose": "^5.9.9",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
