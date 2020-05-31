@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
+import {
+    Switch,
+    Route
+} from "react-router-dom";
+import Nav from './layout/navbar.jsx'
+
+
 class App extends Component {
     render() {
         return (
-            <h1>Hello Word</h1>
+            <div>
+                <Nav />
+                <Switch>
+                    <Route path="/" component={Nav} />
+                </Switch>
+            </div>
         );
     }
 }
