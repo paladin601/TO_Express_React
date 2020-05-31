@@ -34,17 +34,18 @@
     "express": "^4.17.1",
     "jquery": "^3.5.0",
     "mongoose": "^5.9.9",
-    "morgan": "^1.10.0",
-    "react-router-dom": "^5.2.0"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
     "nodemon": "^2.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }

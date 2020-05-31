@@ -1,13 +1,21 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
         main: './src/client/jsx/index.jsx'
     },
     output: {
+        path: path.resolve('./src/client', 'build'),
         filename: '[name].bundle.js',
-        path: path.resolve('./src/client', 'build/js'),
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/client/template.html',
+            //hash: true
+        })
+    ],
     module: {
         rules: [
             {
@@ -19,7 +27,7 @@ module.exports = {
                         presets: ['@babel/preset-react']
                     }
                 }
-            }
+            },
         ]
     }
 }; 
