@@ -15,7 +15,7 @@ app.use(express.json());
 
 //Folders static
 app.use('/modules', express.static(path.join(__dirname, '../../node_modules')));
-let appStaticAssetsPath = path.join(__dirname, '../client');
+let appStaticAssetsPath = path.join(__dirname, '../client/build');
 //Routes
 //Routes Client
 require('../router/router-client')(express, app, appStaticAssetsPath);
