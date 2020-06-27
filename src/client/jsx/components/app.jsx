@@ -4,6 +4,7 @@ import {
     Route
 } from "react-router-dom";
 import Nav from './layout/navbar.jsx'
+import Main from './page/main.jsx'
 
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
             <div>
                 <Nav />
                 <Switch>
-                    <Route path="/" component={Nav} />
+                    <Route path="/" component={Main} />
                 </Switch>
             </div>
         );

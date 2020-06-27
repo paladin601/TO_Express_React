@@ -14,6 +14,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Folders static
+app.use('/public', express.static(path.join(__dirname, '../client/public')));
 app.use('/modules', express.static(path.join(__dirname, '../../node_modules')));
 let appStaticAssetsPath = path.join(__dirname, '../client/build');
 //Routes
